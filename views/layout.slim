@@ -4,12 +4,17 @@ html
     link href="css/bootstrap.min.css" rel="stylesheet"
     link href="css/twiume.css" rel="stylesheet"
 
-    meta  name="viewport" content="width=device-width"
+    meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
 
-  body
-    .sitename
-      .container
-        a href="#" TwiUme
+  body.page_classes
+    nav.navbar
+      .title
+        | Twiume β
 
     div
       == yield
+
+    .footer
+      .container
+        .create-by
+          a href="http://twitter.com/stkn_bb" target="_blank" create by @stkn_bb

@@ -1,20 +1,32 @@
-form.form-horizontal(action="/" method="post")
-  .control-group
-    label.control-label(for="inputLink") Link
-    .controls
-      input#inputLink(type="text" name="link")
+section.container
 
-  .control-group
-    .controls
-      button.btn(type="submit") コードを生成
+  h5.page-header.page-header-top
+    |１．ツイートのリンクをコピペして生成ボタンをタップ
 
-form.form-horizontal
-  .control-group
-    .controls
-      == @link
+  form.form-horizontal(action="/" method="post")
+    .form-group
+      label.control-label.col-md-2(for="inputLink") URL
+      .col-md-10
+        input.form-control#inputLink(type="text" name="link" placeholder="URLをコピペ")
 
-  .control-group
-    label.control-label.col-sm-2(for="exportCode") Code
-    .controls.col-sm-10
-      textarea(rows="3")
-       == @code
+    .form-group
+      button.btn.btn-primary.btn-lg.col-md-offset-3.col-md-6.col-md-offset-3.col-xs-offset-3.col-xs-6.col-xs-offset-3(type="submit") コードを生成
+
+  h5.page-header
+    |２．結果のコードをコピーしてブログにペーストする
+
+  form.form-horizontal
+    .form-group
+      label.control-label.col-sm-2(for="exportCode") 結果
+      .col-sm-10
+        textarea.form-control(rows="3")
+         == @code
+
+  h5.page-header
+    |３．シェアしてもいいんですよ
+
+  .col-md-offset-3.col-md-6.col-md-offset-3.col-xs-offset-3.col-xs-6.col-xs-offset-3
+
+    a.twitter-share-button href="https://twitter.com/share" data-text="ブログにツイート埋め込みしたいスマホブロガーのための「Twiume」" data-via="stkn_bb" data-lang="ja" data-hashtags="twiume">ツイート
+    javascript:
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
