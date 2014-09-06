@@ -1,9 +1,36 @@
-.sitename{
-  padding:15px 0 15px;
-  background-color: #F27398;
-  color: #FFFFFF;
+html {
+  background-color: #EEEEEE;
 }
-.sitename a{
-  font-size: 1.6em;
-  color: inherit;
+.navbar {
+  padding:20px 0 20px;
+  background-color: #FFFFFF;
+  border-radius: 0px;
+}
+.title {
+  font-size: 2em;
+  color: #FE7090;
+  text-align: center;
+}
+
+.page-header-top {
+  margin-top: 0px;
+}
+
+.result {
+  padding-top: 20px;
+}
+
+.footer {
+  margin-top: 30px;
+  height: 60px;
+  background-color: #EEEEEE;
+}
+.footer .container {
+  padding-top: 20px;
+}
+.footer .container .create-by {
+  text-align: center;
+}
+.footer a {
+  color: #F27398;
 }
