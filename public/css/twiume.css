@@ -1,0 +1,9 @@
+.sitename{
+  padding:15px 0 15px;
+  background-color: #F27398;
+  color: #FFFFFF;
+}
+.sitename a{
+  font-size: 1.6em;
+  color: inherit;
+}
