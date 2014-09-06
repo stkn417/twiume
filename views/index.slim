@@ -1,0 +1,20 @@
+form.form-horizontal(action="/" method="post")
+  .control-group
+    label.control-label(for="inputLink") Link
+    .controls
+      input#inputLink(type="text" name="link")
+
+  .control-group
+    .controls
+      button.btn(type="submit") コードを生成
+
+form.form-horizontal
+  .control-group
+    .controls
+      == @link
+
+  .control-group
+    label.control-label.col-sm-2(for="exportCode") Code
+    .controls.col-sm-10
+      textarea(rows="3")
+       == @code
