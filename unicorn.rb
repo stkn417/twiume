@@ -1,5 +1,5 @@
 
-@path = "/var/www/sinatra/twiume/"
+@path = "/home/ec2-user/sinatra/twiume/"
 
 worker_processes 1
 working_directory @path
