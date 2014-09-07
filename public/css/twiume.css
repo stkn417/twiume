@@ -1,6 +1,11 @@
 html {
   background-color: #EEEEEE;
 }
+
+body {
+  background-color: #FFFFFF;
+}
+
 .navbar {
   padding:20px 0 20px;
   background-color: #FFFFFF;
