@@ -17,6 +17,11 @@ html {
   margin-top: 0px;
 }
 
+.info-text {
+  font-size: 1.2rem;
+  color: #050505;
+}
+
 .result {
   padding-top: 20px;
 }
