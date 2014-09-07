@@ -13,7 +13,7 @@ class App < Sinatra::Base
   post '/' do
     @link = @params[:link]
 
-    @code = "<blockquote class=\"twitter-tweet\" lang=\"ja\"><p><a href=\"" + @link + "\"></a></blockquote>
+    @code = "<blockquote class=\"twitter-tweet\" lang=\"ja\"><a href=\"" + @link + "\"></a></blockquote>
 <script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>"
 
     slim :index
